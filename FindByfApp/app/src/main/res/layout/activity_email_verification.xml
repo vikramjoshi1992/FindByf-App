@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="com.example.FindByf.android.emailVerification">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff">
+
+        <!--  Header Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!-- Logo Start-->
+            <ImageView android:src="@drawable/findbyf_logo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"/>
+
+            <!-- Logo Ends -->
+        </LinearLayout>
+
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <!-- Place footer next to header to set z-index property to minus value -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_email_veification"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header">
+            <!-- Link to Registration Screen -->
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="FindByf!"
+                android:textSize="15dip"
+                android:textColor="#0047AB"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="\'With Whom your friend is Busy?\'"
+                android:textSize="12dip"
+                android:textColor="#0047AB"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView
+                android:id="@+id/field_email_verification"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dip"
+                android:text=""
+                android:gravity="center"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"/>
+            <TextView android:id="@+id/email_verified_link"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:text="Already Verified!Click Here "
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#0b84aa"
+                android:background="@drawable/layout_bg"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/button_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+                android:background="#4ccbff"
+            android:text="Refresh"/>
+
+            <Button android:id="@+id/button_resend_verification_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="#4ccbff"
+                android:text="Resend Verification Email "
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        <!-- Login Form Ends -->
+
+    </RelativeLayout>
+</ScrollView>

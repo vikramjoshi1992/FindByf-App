@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="vikram.findbyf.SignUpActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/layout_bg">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!-- Logo Start-->
+            <ImageView android:src="@drawable/findbyf_logo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dip"/>
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <LinearLayout
+            android:id="@+id/register_form"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+            <!-- Full Name Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="FindByf!"
+                android:textSize="15dip"
+                android:textColor="#0047AB"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="\'With Whom your friend is Busy?\'"
+                android:textSize="12dip"
+                android:textColor="#0047AB"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Register Form"
+                android:textSize="18dip"
+                android:textColor="#0b84aa"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"
+                android:text="Full Name"/>
+            <EditText android:id="@+id/field_fullName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:maxLines="1"
+                android:layout_marginBottom="20dip"/>
+            <!--  Email Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"
+                android:text="Email"/>
+            <EditText android:id="@+id/field_email1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:maxLines="1"
+                android:layout_marginBottom="20dip"/>
+            <!-- Password Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"
+                android:text="Password"/>
+            <EditText android:id="@+id/field_password1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="5dip"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"
+                android:text="Mobile No"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/register_form1"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_form">
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/register_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText android:id="@+id/field_ContactNo1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginTop="5dip"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/register_form2"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_form1">
+            <!-- Register Button -->
+            <Button android:id="@+id/button_sign_up1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Register New Account"
+                android:background="#4ccbff"/>
+            <!-- Link to Login Screen -->
+            <TextView android:id="@+id/link_to_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:layout_marginBottom="40dip"
+                android:text="Already has account! Login here"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#025f7c"/>
+
+        </LinearLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>

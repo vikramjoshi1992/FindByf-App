@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="vikram.findbyf.SignInActivity">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg">
+
+        <!--  Header Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!-- Logo Start-->
+            <ImageView android:src="@drawable/findbyf_logo1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"/>
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <!-- Footer Start -->
+        <!-- Place footer next to header to set z-index property to minus value -->
+        <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_loginForm"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+            <!--  Email Label -->
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="FindByf!"
+                android:textSize="15dip"
+                android:textColor="#0047AB"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="\'With Whom your friend is Busy?\'"
+                android:textSize="12dip"
+                android:textColor="#0047AB"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Login Form"
+                android:textSize="18dip"
+                android:textColor="#0b84aa"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:background="@drawable/layout_dummy_bg"/>
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"/>
+            <EditText android:id="@+id/field_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:maxLines="1"/>
+            <!--  Password Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip"
+                android:textColor="#0b84aa"
+                android:text="Password"/>
+            <EditText android:id="@+id/field_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+            <!-- Login button -->
+            <Button android:id="@+id/button_sign_in"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Login"
+                android:background="#4ccbff"/>
+            <!-- Link to Registration Screen -->
+            <TextView android:id="@+id/forgot_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:text="Forgot Password?"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#0b84aa"/>
+            <TextView android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:text="New to FindBYF? Register here"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#0b84aa"/>
+
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_reset"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/layout_loginForm">
+            <!--  Email Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:textColor="#0b84aa"
+                android:gravity="center"
+                android:text="Reset-Password"
+                />
+            <EditText android:id="@+id/reset_field_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:maxLines="1"
+                android:hint="Enter Your Email"/>
+            <!--  Password Label -->
+
+            <!-- Login button -->
+            <Button android:id="@+id/button_reset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Send"
+                android:background="#4ccbff"/>
+            <!-- Link to Registration Screen -->
+            <TextView android:id="@+id/link_to_login1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="40dip"
+                android:text="Click Here For Login"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#0b84aa"/>
+            <TextView android:id="@+id/link_to_register1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="40dip"
+                android:text="New to FindBYF? Register here"
+                android:gravity="center"
+                android:textSize="16dip"
+                android:textColor="#0b84aa"/>
+
+        </LinearLayout>
+        <!-- Login Form Ends -->
+
+    </RelativeLayout>
+</ScrollView>

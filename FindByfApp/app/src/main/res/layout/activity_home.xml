@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.FindByf.android.Home">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg">
+
+            <!--  Header Starts-->
+            <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip">
+                <!-- Logo Start-->
+                <ImageView android:src="@drawable/findbyf_logo1"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"/>
+                <!-- Logo Ends -->
+            </LinearLayout>
+            <!--  Header Ends -->
+
+            <!-- Footer Start -->
+            <!-- Place footer next to header to set z-index property to minus value -->
+            <LinearLayout android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <!-- Footer Ends -->
+
+            <!-- Login Form -->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_home"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:layout_below="@id/header">
+                <!--  Email Label -->
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FindByf!"
+                    android:textSize="15dip"
+                    android:textColor="#0047AB"
+                    android:gravity="center"
+                    android:background="@drawable/layout_dummy_bg"/>
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\'With Whom your friend is Busy?\'"
+                    android:textSize="12dip"
+                    android:textColor="#0047AB"
+                    android:gravity="center"
+                    android:background="@drawable/layout_dummy_bg"/>
+                <TextView android:id="@+id/home_result_textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n\n\n\nPlease accept All permission !!\n\n\n\n"
+                    android:textSize="18dip"
+                    android:textColor="#0b84aa"
+                    android:layout_marginTop="5dip"
+
+                    android:gravity="center"
+                    android:background="@drawable/layout_dummy_bg"/>
+
+                    android:maxLines="1" />
+                <!-- Login button -->
+                <Button android:id="@+id/button_home_resfresh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+
+                    android:text="Refresh"
+                    android:background="#4ccbff"/>
+                <!-- Link to Registration Screen -->
+
+            </LinearLayout>
+
+            <!-- Login Form Ends -->
+
+        </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vikram.findbyf">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/findbyf_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/findbyf_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="FindByf" />
+
+        <receiver
+            android:name=".SendDataToServer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".DetectIncomingCall"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".DetectOutgoingCall"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".ActiveDataSendingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".SignInActivity"
+            android:label="FindByF">
+
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Register New Account" />
+
+        <receiver
+            android:name=".SendContactListToServer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".emailVerification" />
+        <activity
+            android:name=".myNotification"
+            android:label="Notifications" />
+
+        <receiver
+            android:name=".pushNotification"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

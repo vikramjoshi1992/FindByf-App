@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vikram.findbyf.ContactUs">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_profile_bg">
+
+            <LinearLayout
+                android:id="@+id/layout_contact_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Contact Us Form"
+                    android:textSize="16dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Subject"
+                    android:textSize="14dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <EditText
+                    android:id="@+id/field_contact_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Message"
+                    android:textSize="14dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <EditText
+                    android:id="@+id/field_contact_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/contact_sendBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="Send"
+                    android:background="#0b84aa"
+                    />
+                <TextView
+                    android:background="@drawable/layout_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="70dp"
+                    android:text="Facebook Page : fb.me/FindByf"
+                    android:textSize="12dip"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

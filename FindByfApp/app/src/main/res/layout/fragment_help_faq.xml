@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            android:id="@+id/layout_contact_titile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Frequently Asked Question"
+            android:textSize="18dip"
+            android:textColor="#0b84aa"
+            android:gravity="center"/>
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/layout_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/layout_bg"
+            android:layout_below="@id/layout_contact_titile">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) What is FindByf ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: FindByf means 'find busy detail of your friend' on call.Suppose if you call to your friend and he is busy and if you want to know that with whome he is busy,this application tell about this information.You will get information of that person with whome he is busy,like name,last four digit phone number and time  "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) What are requirement ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: a) You should have internet mode on.\nb) Your friend should also have this application installed in his phone and registered.\nc).You should allow us to access contact-list,network-state,phone-state,external-storage.   "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) How to Sign Out from your Profile ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: In home page,on the top of page, go to right side menu and click on Sign Out  "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) How can i reset password ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: First sign out from your application after that in login page or sign up page you will get forgot password link.Click on that link and enter your registered email after that you will get a link in your registered email-id.Click on that link and set your password.  "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) Can i make another account with same email id or mobile id ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: No,you can't do this.In findByf,before sign up completion we first check that email id or mobile no is alread exists.So it is impossible to sign up with same email id or mobile no.  "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) How can edit my profile ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: In menu-list ,click on profile link.In that page you wull get all information.Click on edit profile and save.But you can change your name.Other information can change in next version of FindByf.  "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) How can i get pro version ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: In menu-bar,click on 'Get Pro'.After that pay money and you will get pro registered account.  "
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Qs.1) What information can i get in FindByf Pro version ?"
+                    android:textSize="15dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Ans.: a) You will get whole number with whome your friend is busy rather that last 4 digit phone no.\nb).You will get notification when your friend is busy with anyone."
+                    android:textSize="15dip"
+                    android:gravity="left"/>
+            </LinearLayout>
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_faq">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Copyright:2017 FindByf\nDeveloped by FindByf's team"
+                android:textSize="24dip"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

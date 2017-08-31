@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="vikram.findbyf.MyProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/layout_profile_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo"
+                    app:sriv_border_color="#FFCC00"
+                    app:sriv_border_width="2dp"
+                    app:sriv_oval="true" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Personal Profile"
+                    android:textSize="16dip"
+                    android:textColor="#0b84aa"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/field_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:id="@+id/field_profile_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:gravity="center"
+                    android:hint="Phone number"/>
+                <EditText
+                    android:id="@+id/field_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:gravity="center"
+                    android:hint="Email"/>
+
+                <Button
+                    android:id="@+id/profile_editbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Edit Your Profile"
+                    android:background="#4ccbff"
+                    />
+                <Button
+                    android:id="@+id/profile_saveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Save Profile"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>
